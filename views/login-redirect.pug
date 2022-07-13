@@ -1,0 +1,8 @@
+script.
+    const handleCredentialResponse = (args) => {
+        console.log({args})
+    }
+
+script(src='https://accounts.google.com/gsi/client' async='' defer='')
+#g_id_onload(data-client_id=`${googleCloudAuthId}` data-ux_mode='redirect' data-login_uri=`${afterLogin}`)
+.g_id_signin(data-type='standard')
